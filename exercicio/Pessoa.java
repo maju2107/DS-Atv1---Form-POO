@@ -1,6 +1,6 @@
 package exercicio;
 
-public class Pessoa(){
+public class Pessoa {
 // A classe Pessoa possui atributos como nome, idade e e-mail, além
 // de um construtor para inicializar esses dados e métodos para editar, exibir e
 // excluir as informações.
@@ -8,6 +8,7 @@ public class Pessoa(){
     String nome;
     int idade;
     String email;
+
     // funções construtoras
     public Aluno() {}; // construtor padrão
     // métodos/funções
