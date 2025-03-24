@@ -67,7 +67,7 @@ public class Main{
                 break; 
 
                 default:
-                    System.out.println("Opção não encontrada dentre as fornecidas pelo sistema!:");     
+                    System.out.println("Opção não encontrada dentre as fornecidas pelo sistema!");     
                 break;
             }
             
