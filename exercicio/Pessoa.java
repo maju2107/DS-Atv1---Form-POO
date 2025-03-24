@@ -1,6 +1,6 @@
 
 
-public class Pessoa() {
+public class Pessoa {
 
     // características da classe
     private String nome;

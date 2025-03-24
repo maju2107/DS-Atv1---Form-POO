@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class Main{
@@ -14,30 +13,37 @@ public class Main{
 
         System.out.println("Digite o número da opção desejada:");
         opcao = lerOpcao.nextInt();
+        lerOpcao.nextLine(); // coloquei e deu certo para ler e apresentar o nome
 
             switch(opcao){
                 case 1:
                     System.out.println("Digite o nome:"); // entrada de dados
                     pessoa1.setNome(lerOpcao.nextLine());
-                
-                    System.out.println("Digite a idade:");
-                    pessoa1.setIdade(lerOpcao.nextInt());
+                    lerOpcao.nextLine(); // ler o enter do teclado
 
                     System.out.println("Digite a idade:");
+                    pessoa1.setIdade(lerOpcao.nextInt());
+                    lerOpcao.nextLine();
+
+                    System.out.println("Digite o email:");
                     pessoa1.setEmail(lerOpcao.nextLine());
+                    lerOpcao.nextLine();
 
                     System.out.println("Pessoinha cadastrada com sucesso!;) ");
                 break; 
 
                 case 2:
-                    System.out.println("Digite o novo nome:"); // entrada de dados
+                    System.out.println("Digite o novo nome:"); // entrada de novos dados
                     pessoa1.setNome(lerOpcao.nextLine());
+                    lerOpcao.nextLine();
                 
                     System.out.println("Digite a nova idade:");
                     pessoa1.setIdade(lerOpcao.nextInt());
+                    lerOpcao.nextLine();
 
-                    System.out.println("Digite a idade:");
+                    System.out.println("Digite o novo e-mail:");
                     pessoa1.setEmail(lerOpcao.nextLine());
+                    lerOpcao.nextLine();
 
                     System.out.println("Dados atualizados com sucesso!:) ");
                 break; 
@@ -49,9 +55,9 @@ public class Main{
                 break; 
 
                 case 4:
-                    pessoa1.setNome(nome:"Sem dados cadastrados");
-                    pessoa1.setIdade(idade:"Sem dados cadastrados");
-                    pessoa1.setEmail(email:"Sem dados cadastrados");
+                    pessoa1.setNome("Sem dados cadastrados");
+                    pessoa1.setIdade(-1);
+                    pessoa1.setEmail("Sem dados cadastrados");
 
                     System.out.println("Pessoinha excluída com sucesso!:( ");     
                 break; 
@@ -69,6 +75,7 @@ public class Main{
     }
 
         private static void listaDeOpcoes(){
+        System.out.println("---------------------------------------------------------------------------------");
         System.out.println("Oie, seja bem vind@ ao sistema de cadastro de Pessoa! Escolha uma operação:");
         System.out.println("1 - Cadastrar uma nova pessoinha:");
         System.out.println("2 - Editar os dados de uma pessoinha cadastrada:");
