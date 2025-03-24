@@ -9,7 +9,7 @@ public class Pessoa {
 
 
     // funções construtoras
-    public Aluno() {}; // construtor padrão
+    //public Aluno() {}; // construtor padrão
 
 
     // métodos/funções
